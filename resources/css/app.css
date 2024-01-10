@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif !important;
+    }
+}
+::selection{
+     @apply bg-secondary text-white
+}
+.font-secondary {
+    font-family: 'Playfair Display', serif;
+}
+
+.title-secondary{
+    font-family: 'Playfair Display', serif;
+    @apply text-secondary italic
+}
+
+
+
+/**
+* Custom Scroll Bar
+*/
+/* width */
+.customscroll::-webkit-scrollbar {
+    @apply w-1 ;
+  }
+  
+/* Track */
+.customscroll::-webkit-scrollbar-track {
+@apply bg-gray-400;
+}
+
+/* Handle */
+.customscroll::-webkit-scrollbar-thumb {
+@apply bg-sky-900 rounded-full
+}
+
+/* Handle on hover */
+.customscroll::-webkit-scrollbar-thumb:hover {
+@apply bg-sky-700 
+}
+
+/*
+* Buttons
+*/
+.primary-button {
+@apply rounded-md border border-transparent bg-sky-600 px-2 md:px-4 py-2 text-xs md:text-sm font-medium text-white shadow-sm hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2
+}
+
+.primary-button-2 {
+@apply rounded-full border border-transparent bg-sky-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2
+}
+
+.btn-danger {
+    @apply rounded-full bg-red-600 px-2 md:px-4 py-2 font-bold text-white  hover:bg-red-700 focus:outline-none
+    }
+
+.form-file-input {
+    @apply 
+    block
+    w-full
+    p-1
+    text-base
+    font-normal
+    text-gray-700
+    bg-white bg-clip-padding
+    border border-solid border-gray-300
+    rounded
+    transition
+    ease-in-out
+    m-0
+    focus:text-gray-700 focus:bg-white focus:border-sky-600 focus:outline-none
+}
+
+.swiper .swiper-button-prev, .swiper .swiper-button-next{
+    color: white;
+}
+
+.swiper .swiper-button-prev::after{
+    margin-left: 120px;
+}
+.swiper .swiper-button-next::after{
+    margin-right: 120px;
+}
+
+@media screen and (max-width: 600px) {
+    .swiper .swiper-button-prev::after{
+        display: none;
+    }
+    .swiper .swiper-button-next::after{
+        display: none;
+    }
+}
+/* 
+
+.swiper .swiper-button-prev:hover, .swiper .swiper-button-next:hover{
+    opacity: 1;
+    transform: scale(1.1);
+    transition: all 0.4s ease-in-out;
+}
+
+.swiper .swiper-pagination-bullet{
+    background-color: #0369a1;
+    height: 10px;
+    width: 10px;
+}
+
+.swiper .swiper-scrollbar{
+    background-color: #0369a1;
+    height: 15px;
+    width: 15px;
+} */
+

@@ -61,7 +61,7 @@ class QuotationController extends Controller
 
         try {
             if($quotation){
-                return redirect()->back()->with('quotesubmitted', 'Your was sent successfully');
+                return redirect()->back()->with('quotesubmitted', 'Your request was sent successfully');
             }
         } catch (\Throwable $th) {
             dd($th);

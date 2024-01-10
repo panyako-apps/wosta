@@ -79,7 +79,7 @@ function submit() {
         <div class="bg-white p-6 rounded-xl">
 
             <div class="">
-                <h1 class=" mx-auto flex items-center justify-center font-bold text-2xl md:text-4xl text-primary uppercase w-1/2 text-center">Request a Quote</h1>
+                <h1 class=" mx-auto flex items-center justify-center font-bold text-2xl md:text-4xl text-primary uppercase w-1/2 text-center">Request Service</h1>
                 <hr class="mt-4 mb-12 w-1/5 mx-auto border-primary border-2">
             </div>
 

@@ -19,7 +19,7 @@ class SlideSeeder extends Seeder
                 'slideshow_id'=>1,
                 'title'=>'Grab an <span class="text-secondary">opportunity to</span>',
                 'image'=> 'slideshow1-1.jpg',
-                'description'=> 'Study and Work <span class="title-secondary">Abroad</span>',
+                'description'=> 'Work and Study <span class="title-secondary">Abroad</span>',
                 'isPublished'=> true,
                 'published_by'=>1,
                 'published_at'=>now(),
